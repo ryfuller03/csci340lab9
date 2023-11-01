@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ryanfuller/Documents/Hendrix 23 24/Databases and Web Systems/csci340lab9/WalterUniversity/WalterUniversity.csproj": {}
+  },
+  "projects": {
+    "/Users/ryanfuller/Documents/Hendrix 23 24/Databases and Web Systems/csci340lab9/WalterUniversity/WalterUniversity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ryanfuller/Documents/Hendrix 23 24/Databases and Web Systems/csci340lab9/WalterUniversity/WalterUniversity.csproj",
+        "projectName": "WalterUniversity",
+        "projectPath": "/Users/ryanfuller/Documents/Hendrix 23 24/Databases and Web Systems/csci340lab9/WalterUniversity/WalterUniversity.csproj",
+        "packagesPath": "/Users/ryanfuller/.nuget/packages/",
+        "outputPath": "/Users/ryanfuller/Documents/Hendrix 23 24/Databases and Web Systems/csci340lab9/WalterUniversity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ryanfuller/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
