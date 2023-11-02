@@ -277,7 +277,7 @@ namespace WalterUniversity.Data
                 new Enrollment {
                     Student = alexander,
                     Course = chemistry,
-                    Grade = Grade.A
+                    Grade = Grade.W
                 },
                 new Enrollment {
                     Student = alexander,
@@ -326,7 +326,7 @@ namespace WalterUniversity.Data
                 new Enrollment {
                     Student = justice,
                     Course = literature,
-                    Grade = Grade.B
+                    Grade = Grade.I
                 }
             };
 
