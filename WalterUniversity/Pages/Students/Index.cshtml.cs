@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using ContosoUniversity.Models;
+using WalterUniversity.Models;
 using WalterUniversity.Data;
 
 namespace WalterUniversity.Pages.Students

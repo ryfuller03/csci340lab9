@@ -1,11 +1,11 @@
-using ContosoUniversity.Models.SchoolViewModels;
+using WalterUniversity.Models.SchoolViewModels;
 using WalterUniversity.Data;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ContosoUniversity.Models;
+using WalterUniversity.Models;
 
 namespace WalterUniversity.Pages
 {

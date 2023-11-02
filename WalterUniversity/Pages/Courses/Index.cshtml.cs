@@ -1,10 +1,10 @@
-using ContosoUniversity.Models;
+using WalterUniversity.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Courses
+namespace WalterUniversity.Pages.Courses
 {
     public class IndexModel : PageModel
     {

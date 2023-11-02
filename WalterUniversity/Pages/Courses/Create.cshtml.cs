@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ContosoUniversity.Models;
+using WalterUniversity.Models;
 using WalterUniversity.Data;
 
 namespace WalterUniversity.Pages.Courses

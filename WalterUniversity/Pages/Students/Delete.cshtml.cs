@@ -1,4 +1,4 @@
-using ContosoUniversity.Models;
+using WalterUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;

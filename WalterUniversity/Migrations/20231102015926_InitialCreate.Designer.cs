@@ -20,7 +20,7 @@ namespace WalterUniversity.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
 
-            modelBuilder.Entity("ContosoUniversity.Models.Course", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Course", b =>
                 {
                     b.Property<int>("CourseID")
                         .HasColumnType("INTEGER");
@@ -42,7 +42,7 @@ namespace WalterUniversity.Migrations
                     b.ToTable("Course", (string)null);
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Department", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Department", b =>
                 {
                     b.Property<int>("DepartmentID")
                         .ValueGeneratedOnAdd()
@@ -68,7 +68,7 @@ namespace WalterUniversity.Migrations
                     b.ToTable("Departments");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Enrollment", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Enrollment", b =>
                 {
                     b.Property<int>("EnrollmentID")
                         .ValueGeneratedOnAdd()
@@ -92,7 +92,7 @@ namespace WalterUniversity.Migrations
                     b.ToTable("Enrollments");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Instructor", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Instructor", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -117,7 +117,7 @@ namespace WalterUniversity.Migrations
                     b.ToTable("Instructor", (string)null);
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.OfficeAssignment", b =>
+            modelBuilder.Entity("WalterUniversity.Models.OfficeAssignment", b =>
                 {
                     b.Property<int>("InstructorID")
                         .HasColumnType("INTEGER");
@@ -131,7 +131,7 @@ namespace WalterUniversity.Migrations
                     b.ToTable("OfficeAssignments");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Student", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Student", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -174,9 +174,9 @@ namespace WalterUniversity.Migrations
                     b.ToTable("CourseInstructor");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Course", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Course", b =>
                 {
-                    b.HasOne("ContosoUniversity.Models.Department", "Department")
+                    b.HasOne("WalterUniversity.Models.Department", "Department")
                         .WithMany("Courses")
                         .HasForeignKey("DepartmentID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -185,24 +185,24 @@ namespace WalterUniversity.Migrations
                     b.Navigation("Department");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Department", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Department", b =>
                 {
-                    b.HasOne("ContosoUniversity.Models.Instructor", "Administrator")
+                    b.HasOne("WalterUniversity.Models.Instructor", "Administrator")
                         .WithMany()
                         .HasForeignKey("InstructorID");
 
                     b.Navigation("Administrator");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Enrollment", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Enrollment", b =>
                 {
-                    b.HasOne("ContosoUniversity.Models.Course", "Course")
+                    b.HasOne("WalterUniversity.Models.Course", "Course")
                         .WithMany("Enrollments")
                         .HasForeignKey("CourseID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ContosoUniversity.Models.Student", "Student")
+                    b.HasOne("WalterUniversity.Models.Student", "Student")
                         .WithMany("Enrollments")
                         .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -213,11 +213,11 @@ namespace WalterUniversity.Migrations
                     b.Navigation("Student");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.OfficeAssignment", b =>
+            modelBuilder.Entity("WalterUniversity.Models.OfficeAssignment", b =>
                 {
-                    b.HasOne("ContosoUniversity.Models.Instructor", "Instructor")
+                    b.HasOne("WalterUniversity.Models.Instructor", "Instructor")
                         .WithOne("OfficeAssignment")
-                        .HasForeignKey("ContosoUniversity.Models.OfficeAssignment", "InstructorID")
+                        .HasForeignKey("WalterUniversity.Models.OfficeAssignment", "InstructorID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -226,35 +226,35 @@ namespace WalterUniversity.Migrations
 
             modelBuilder.Entity("CourseInstructor", b =>
                 {
-                    b.HasOne("ContosoUniversity.Models.Course", null)
+                    b.HasOne("WalterUniversity.Models.Course", null)
                         .WithMany()
                         .HasForeignKey("CoursesCourseID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ContosoUniversity.Models.Instructor", null)
+                    b.HasOne("WalterUniversity.Models.Instructor", null)
                         .WithMany()
                         .HasForeignKey("InstructorsID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Course", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Course", b =>
                 {
                     b.Navigation("Enrollments");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Department", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Department", b =>
                 {
                     b.Navigation("Courses");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Instructor", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Instructor", b =>
                 {
                     b.Navigation("OfficeAssignment");
                 });
 
-            modelBuilder.Entity("ContosoUniversity.Models.Student", b =>
+            modelBuilder.Entity("WalterUniversity.Models.Student", b =>
                 {
                     b.Navigation("Enrollments");
                 });
