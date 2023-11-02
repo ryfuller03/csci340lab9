@@ -14,14 +14,14 @@ namespace WalterUniversity.Data
 
             var students = new Student[]
             {
-                new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2019-09-01")},
-                new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2018-09-01")},
-                new Student{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2016-09-01")},
-                new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2018-09-01")},
-                new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2019-09-01")}
+                new Student{FirstMidName="Carson",LastName="Alexander",Age=18,EnrollmentDate=DateTime.Parse("2019-09-01")},
+                new Student{FirstMidName="Meredith",LastName="Alonso",Age=20,EnrollmentDate=DateTime.Parse("2017-09-01")},
+                new Student{FirstMidName="Arturo",LastName="Anand",Age=19,EnrollmentDate=DateTime.Parse("2018-09-01")},
+                new Student{FirstMidName="Gytis",LastName="Barzdukas",Age=20,EnrollmentDate=DateTime.Parse("2017-09-01")},
+                new Student{FirstMidName="Yan",LastName="Li",Age=18,EnrollmentDate=DateTime.Parse("2017-09-01")},
+                new Student{FirstMidName="Peggy",LastName="Justice",Age=21,EnrollmentDate=DateTime.Parse("2016-09-01")},
+                new Student{FirstMidName="Laura",LastName="Norman",Age=19,EnrollmentDate=DateTime.Parse("2018-09-01")},
+                new Student{FirstMidName="Nino",LastName="Olivetto",Age=18,EnrollmentDate=DateTime.Parse("2019-09-01")}
             };
 
             context.Students.AddRange(students);
